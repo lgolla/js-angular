@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+function generateBill(days){
+
+var PER_DAY = 40;
+var DISCOUNT = 0;
+var TOTAL_BILL = 0;
+var FINAL_BILL = 0;
+if(days >=7){
+DISCOUNT = 50;
+TOTAL_BILL = days * PER_DAY;
+FINAL_BILL = TOTAL_BILL - DISCOUNT;
+}
+if( days >= 3 && days < 7){
+DISCOUNT = 20;
+TOTAL_BILL = days * PER_DAY;
+FINAL_BILL = TOTAL_BILL - DISCOUNT;
+}
+alert('For '+ days +' days the total bill:$'+TOTAL_BILL +' and Final bill after discount of $'+DISCOUNT +' is $'+FINAL_BILL );
+return FINAL_BILL;
+}
+generateBill(0);
+</script>
+</head>
+<body>
+<script></script>
+</body>
+</html>
