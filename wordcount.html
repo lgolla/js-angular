@@ -13,12 +13,11 @@ if(text == '' || text == ' '){
 text= text.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } );
 COUNT = text.length;
 }
+console.log(COUNT);
 return COUNT;
 }
-getWordCount('Dear   Victoria, I love  to press   space button.');
+getWordCount('    Dear   Victoria, I love  to press   space button.');
 </script>
 </head>
-<body>
-<script></script>
-</body>
+
 </html>

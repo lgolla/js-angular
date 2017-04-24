@@ -3,7 +3,7 @@
 <script>
 function getMiddle(s)
 {
-  var LENGTH = 0;
+var LENGTH = 0;
 var MIDDLE;
 var word = new String(s);
 LENGTH = word.length;
@@ -12,13 +12,11 @@ MIDDLE = word.substring((LENGTH/2)-1,(LENGTH/2)+1);
 }else{
 MIDDLE  = word.substring(LENGTH/2,(LENGTH/2)+1);
 }
-
+console.log(MIDDLE);
 return MIDDLE;
 }
-getMiddle('0');
+getMiddle('doctor');
 </script>
 </head>
-<body>
-<script></script>
-</body>
+
 </html>
