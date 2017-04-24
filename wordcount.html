@@ -13,8 +13,6 @@ if(text == '' || text == ' '){
 text= text.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } );
 COUNT = text.length;
 }
-
-alert(text +' contains '+ COUNT + ' words');
 return COUNT;
 }
 getWordCount('Dear   Victoria, I love  to press   space button.');
