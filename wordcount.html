@@ -1,20 +1,19 @@
 <html>
-<meta charset="UTF-8"> 
+
 <head>
 <script>
 
 function getWordCount(text){
-var LENGTH = 0;
-var text= new String(text).trim();
-var COUNT = 0;
-if(text == '' || text == ' '){
 
-}else{
+if(text){
 text= text.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } );
-COUNT = text.length;
+console.log(text.length);
+return text.length;
+}else{
+console.log(0);
+return 0;
 }
-console.log(COUNT);
-return COUNT;
+
 }
 getWordCount('    Dear   Victoria, I love  to press   space button.');
 </script>

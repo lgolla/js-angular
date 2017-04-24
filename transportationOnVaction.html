@@ -4,24 +4,19 @@
 
 function rentalCarCost(days){
 
-var PER_DAY = 40;
-var DISCOUNT = 0;
-var TOTAL_BILL = 0;
-var FINAL_BILL = 0;
+if(days == 0) return 0;
+var TOTAL_BILL = days * 40
+var DISCOUNT;
 if(days >=7){
 DISCOUNT = 50;
-TOTAL_BILL = days * PER_DAY;
-FINAL_BILL = TOTAL_BILL - DISCOUNT;
 }
 else if( days >= 3 && days < 7){
 DISCOUNT = 20;
-TOTAL_BILL = days * PER_DAY;
-FINAL_BILL = TOTAL_BILL - DISCOUNT;
 }else{
-FINAL_BILL = days * PER_DAY;
+DISCOUNT = 0;
 }
-console.log(FINAL_BILL);
-return FINAL_BILL;
+console.log(TOTAL_BILL - DISCOUNT);
+return (TOTAL_BILL - DISCOUNT);
 }
 rentalCarCost(2);
 </script>
