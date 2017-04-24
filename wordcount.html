@@ -1,0 +1,24 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+<script>
+
+function getWordCount(text){
+var LENGTH = 0;
+var text= new String(text).trim();
+var COUNT = 0;
+if(text == '' || text == ' '){
+
+}else{
+COUNT = (text.split(" ")).length;
+}
+alert(text +' contains '+ COUNT + ' words');
+return COUNT;
+}
+getWordCount('hello, How are you?');
+</script>
+</head>
+<body>
+<script></script>
+</body>
+</html>
